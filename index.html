@@ -1,50 +1,121 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliezer CAD</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Eliezer CAD</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="https://wa.me/SEUNUMEROAQUI" target="_blank">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Projetos em CAD e SolidWorks</h2>
-      <p>Modelagem 3D e desenhos técnicos para chapas metálicas com <strong>precisão e qualidade profissional</strong>.</p>
-      <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="btn-whatsapp">Fale comigo no WhatsApp</a>
-    </div>
-  </section>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <section id="servicos" class="services">
-    <div class="container">
-      <h3>Serviços Oferecidos</h3>
-      <ul>
-        <li>✅ Modelagem de peças 3D</li>
-        <li>✅ Desenhos técnicos para fabricação</li>
-        <li>✅ Conversão de esboços manuais para CAD</li>
-        <li>✅ Conversão de arquivos XT/STEP em chapas metálicas</li>
-        <li>✅ Especialista em projetos com chapas metálicas</li>
-        <li>📍 Atendimento para todo o Brasil</li>
-        <li>👉 Consulte prazos e valores para o seu projeto</li>
-      </ul>
-    </div>
-  </section>
+/* Cabeçalho fixo */
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-  <footer>
-    <p>© 2025 Eliezer CAD - Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+header h1 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e9ecef;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Serviços */
+.services {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.services ul {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.services li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+}
