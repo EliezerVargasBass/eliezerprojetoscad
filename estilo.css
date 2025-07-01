@@ -1,31 +1,38 @@
-/* Reset básico */
+/* estilo.css */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
+body {
   font-family: Arial, sans-serif;
-  height: 100%;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-/* Cabeçalho fixo */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: white;
-  padding: 20px 40px;
+.topo {
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 15px 0;
   z-index: 1000;
 }
 
+.topo .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
-  font-size: 1.5em;
+  color: #fff;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -35,71 +42,82 @@ nav ul {
   gap: 20px;
 }
 
-nav a {
-  color: white;
+nav ul li a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-/* Seção principal com imagem */
+nav ul li a:hover {
+  color: #25D366;
+}
+
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1605522649284-8bb67f1ee8f9?auto=format&fit=crop&w=1400&q=80');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 160px 20px 100px;
+  background: url('tela.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  min-height: 100vh;
+  padding-top: 80px;
 }
 
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
+.conteudo-hero {
   background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   padding: 40px;
   border-radius: 12px;
+  max-width: 700px;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+.conteudo-hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
-.hero h2 {
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 20px;
+.conteudo-hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
-.hero p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.hero ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  text-align: left;
-}
-
-.hero li::before {
-  content: "✅ ";
-  margin-right: 6px;
-}
-
-.btn-whatsapp {
-  margin-top: 30px;
+.botao-hero {
   display: inline-block;
   background-color: #25D366;
   color: white;
-  padding: 15px 25px;
-  font-size: 18px;
+  padding: 15px 30px;
   border-radius: 8px;
+  font-size: 18px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
-.btn-whatsapp:hover {
-  background-color: #1ebc5e;
+.botao-hero:hover {
+  background-color: #1cbf5e;
+}
+
+.servicos {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.servicos .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.servicos h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.servicos ul {
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.servicos li {
+  margin-bottom: 12px;
 }
