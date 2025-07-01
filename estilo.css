@@ -1,5 +1,4 @@
-/* estilo.css */
-
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -7,117 +6,120 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
   color: #333;
-  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
-.topo {
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 40px;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #111;
-  padding: 15px 0;
-  z-index: 1000;
-}
-
-.topo .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  color: #fff;
+header h1 {
   font-size: 24px;
-  font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #fff;
+nav a {
+  color: #f8f8f8;
+  margin-left: 20px;
   text-decoration: none;
-  font-size: 16px;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #25D366;
+nav a:hover {
+  color: #00d161;
 }
 
-.hero {
-  background: url('tela.png') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.conteudo-hero {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 700px;
-}
-
-.conteudo-hero h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
-.conteudo-hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.botao-hero {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 8px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.botao-hero:hover {
-  background-color: #1cbf5e;
-}
-
-.servicos {
-  padding: 60px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.servicos .container {
+main {
+  padding: 120px 20px 40px;
   max-width: 900px;
   margin: auto;
 }
 
-.servicos h3 {
-  font-size: 28px;
-  margin-bottom: 30px;
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.servicos ul {
-  list-style: none;
-  font-size: 18px;
+.hero h2 {
+  font-size: 32px;
+  color: #222;
+}
+
+.hero h3 {
+  font-size: 22px;
+  color: #444;
   margin-bottom: 20px;
 }
 
-.servicos li {
-  margin-bottom: 12px;
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.services {
+  margin-top: 60px;
+}
+
+.services h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #111;
+  border-bottom: 2px solid #00d161;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.services li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.services li:last-child::before {
+  content: "📌";
+}
+
+.services li:nth-last-child(2)::before {
+  content: "👉";
 }
