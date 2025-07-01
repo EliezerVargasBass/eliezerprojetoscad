@@ -4,40 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eliézer G. de Vargas – Projetos CAD</title>
-  <link rel="stylesheet" href="estilo.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #25D366;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('e54dfecf-2c78-414f-9cbd-05e23beb9d85.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 800px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      text-align: left;
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .btn-whatsapp {
+      margin-top: 30px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebc5e;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">Eliézer CAD</div>
+    <h1>Eliézer CAD</h1>
     <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="https://wa.me/5551999618536" target="_blank">Contato</a></li>
-      </ul>
+      <a href="#">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="https://wa.me/5551999618536" target="_blank">Contato</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="conteudo">
-      <h1>Eliézer G. de Vargas</h1>
+  <section class="hero" id="servicos">
+    <div class="hero-content">
       <h2>Projetos em CAD e SolidWorks</h2>
       <p>Especialista em modelagem 3D de peças técnicas no <strong>SolidWorks</strong> e desenvolvimento de <strong>desenhos técnicos 2D</strong> com precisão no <strong>AutoCAD</strong>.</p>
+
+      <ul>
+        <li>Modelagem de peças 3D</li>
+        <li>Desenhos técnicos para fabricação</li>
+        <li>Conversão de esboços manuais para arquivos CAD</li>
+        <li>Conversão de arquivos XT ou STEP em chapas metálicas</li>
+        <li><strong>Especialista em chapa metálica</strong></li>
+      </ul>
+
+      <p>📍 Atendimento para todo o Brasil</p>
+      <p>👉 Consulte prazos e valores para o seu projeto!</p>
+
       <a class="btn-whatsapp" href="https://wa.me/5551999618536" target="_blank">Fale comigo no WhatsApp</a>
     </div>
   </section>
 
-  <section id="servicos" class="servicos">
-    <h3>Serviços oferecidos:</h3>
-    <ul>
-      <li>✅ Modelagem de peças 3D</li>
-      <li>✅ Desenhos técnicos para fabricação</li>
-      <li>✅ Conversão de esboços manuais para arquivos CAD</li>
-      <li>✅ Conversão de arquivos XT ou STEP em chapas metálicas</li>
-      <li>✅ Especialista em chapa metálica</li>
-    </ul>
-    <p>📍 Atendimento para todo o Brasil</p>
-    <p>👉 Consulte prazos e valores para o seu projeto!</p>
-  </section>
 </body>
 </html>
