@@ -6,116 +6,110 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
   color: #333;
+  background-color: #f9f9f9;
   line-height: 1.6;
 }
 
-/* Cabeçalho fixo */
+/* Container centralizador */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
 header {
-  background-color: #ffffff;
+  background-color: #111;
+  color: white;
   padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header h1 {
-  font-size: 2rem;
-  color: #007bff;
+  font-size: 24px;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
+  list-style: none;
+  gap: 20px;
 }
 
-nav a {
+nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-weight: 500;
 }
 
-nav a:hover {
-  color: #007bff;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  background-color: #e9ecef;
-  padding: 80px 20px;
+  background: linear-gradient(135deg, #00416A, #E4E5E6);
+  color: white;
+  padding: 100px 20px;
   text-align: center;
-}
-
-.hero-content {
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 36px;
   margin-bottom: 15px;
-  color: #222;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  color: #555;
-}
-
-.btn-whatsapp {
-  background-color: #25D366;
-  color: white;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 50px;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-.btn-whatsapp:hover {
-  background-color: #1ebe5d;
-}
-
-/* Seção de serviços */
-.services {
-  padding: 60px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.services h3 {
-  font-size: 2rem;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 
-.services ul {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+.btn {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.services li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+.btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Serviços */
+.servicos {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.servicos h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #00416A;
+}
+
+.servicos ul {
+  list-style: none;
+  font-size: 18px;
+  line-height: 2;
+  padding-left: 0;
 }
 
 /* Rodapé */
 footer {
-  background-color: #f1f1f1;
+  background-color: #111;
+  color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #777;
-  margin-top: 40px;
+  padding: 20px 0;
 }
